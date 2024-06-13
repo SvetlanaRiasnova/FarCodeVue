@@ -13,13 +13,11 @@
 <script>
 export default {
   name: "HeaderComponent",
-  data() {
-    // "mainMenu": ["О нас", "Контакты"] //передать ссылки в пропс
-  },
 };
 </script>
 
 <style scoped lang="scss">
+@import "src/style/style.scss";
 .header {
   margin: 30px auto;
   display: flex;

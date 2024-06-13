@@ -25,6 +25,7 @@ export default {
   background-color: #160e20;
   color: #b1b9ce;
   overflow: hidden;
+  bottom: 0;
   &__wrap {
     width: 1170px;
     margin: 0 auto;

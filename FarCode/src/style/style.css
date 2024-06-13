@@ -1,0 +1,34 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  font-style: normal;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.slash__green {
+  color: #56FFCC;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 49px;
+}
+
+.slash_purple {
+  margin: 0;
+  color: #7856FF;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 49px;
+}
+
+.hidden {
+  display: none;
+}/*# sourceMappingURL=style.css.map */
