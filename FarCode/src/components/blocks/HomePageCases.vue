@@ -12,8 +12,8 @@
         <div class="cases__item_image">
           <img src="@/assets/img/case1.png" alt="case1" class="gray" />
         </div>
-        <a href="registration.html" class="cases__item_text"
-          >Разработка программы сервера на Django</a
+        <router-link to="/register" class="cases__item_text"
+          >Разработка программы сервера на Django</router-link
         >
       </div>
       <div class="cases__item">

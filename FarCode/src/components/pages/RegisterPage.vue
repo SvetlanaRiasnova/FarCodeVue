@@ -36,6 +36,18 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import "src/style/style.scss";
+.cloud5 {
+  display: none;
+}
+.cloud6 {
+  display: none;
+}
+.cloud__bottom {
+  width: 400.63px;
+  height: 405.45px;
+  right: 1640.37px;
+  top: 3444px;
+}
 </style>

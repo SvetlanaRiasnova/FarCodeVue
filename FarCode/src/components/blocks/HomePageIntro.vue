@@ -5,7 +5,7 @@
         <span class="slash_purple">/</span>FARCODE
       </h1>
       <p class="intro__info_description">ХАКАТОН ЦИФРОВЫХ ПРОФЕССИЙ</p>
-      <MainButton :buttonContex="msg" />
+      <MainButton :buttonContex="msg" @click="showModal" />
     </div>
     <div class="intro__image">
       <img src="intro.png" alt="main image" />
@@ -25,6 +25,12 @@ export default {
     return {
       msg: "участвовать",
     };
+  },
+  methods: {
+    showModal() {
+      let element = this.$refs.modal.$el;
+      element.modal("modal");
+    },
   },
 };
 </script>

@@ -3,7 +3,11 @@
     <img src="@/assets/img/cloud1.png" alt="cloud" class="cloud1" />
     <img src="@/assets/img/cloud2.png" alt="cloud" class="cloud2" />
     <img src="@/assets/img/cloud3.png" alt="cloud" class="cloud3" />
-    <img src="@/assets/img/cloud4.png" alt="cloud" class="cloud4" />
+    <img
+      src="@/assets/img/cloud4.png"
+      alt="cloud"
+      class="cloud4 cloud__bottom"
+    />
     <img src="@/assets/img/cloud5.png" alt="cloud" class="cloud5" />
     <img src="@/assets/img/cloud6.png" alt="cloud" class="cloud6" />
   </div>

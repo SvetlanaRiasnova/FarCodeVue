@@ -2,10 +2,10 @@
   <section class="case__intro">
     <div class="case__intro_info">
       <h1 class="case__intro_header">Разработка программы сервера на Django</h1>
-      <MainButton :buttonContex="msg" :class="case__intro_button" />
+      <MainButton :buttonContex="msg" class="case__info_button" />
     </div>
     <div class="case__intro_image">
-      <img src="case1.png" alt="case1 image" />
+      <img src="/case1.png" alt="case1 image" />
     </div>
   </section>
 </template>
@@ -43,20 +43,13 @@ export default {
     margin: 0;
     padding-top: 51px;
   }
-  :deep(&_button) {
-    margin-top: 49px;
-    width: 186px;
-    height: 70px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-    background: rgb(22, 14, 32);
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
-    color: #ffffff;
-  }
+
   & img {
     width: 526px;
   }
+}
+.case__info_button {
+  margin-top: 49px;
+  width: 186px;
 }
 </style>
