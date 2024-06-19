@@ -14,11 +14,15 @@ body {
     overflow-x: hidden;
 }
 
-.slash__green {
+html {
+    scroll-behavior: smooth;
+  }
+
+.slashgreen {
     color: #56FFCC;
     @include titleFont;
 }
-.slash_purple {
+.slashpurple {
     margin: 0;
     color: #7856FF;
     @include titleFont;

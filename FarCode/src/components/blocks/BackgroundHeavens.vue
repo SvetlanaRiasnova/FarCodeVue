@@ -68,12 +68,10 @@ export default {
   position: absolute;
   width: 632.09px;
   height: 656.4px;
-  // left: 2033.67px;
   right: -50.13px;
   top: 4636px;
   bottom: 953.03px;
   z-index: -2;
-  // transform: rotate(160.73deg);
 }
 .cloud6 {
   /* Фигура6 */

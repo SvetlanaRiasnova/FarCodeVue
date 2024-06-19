@@ -2,74 +2,74 @@
   <section class="cases" id="cases">
     <div class="cases__top">
       <h2 class="cases__header">
-        <span class="slash_purple">/</span>
+        <span class="slashpurple">/</span>
         Серьёзные проблемы требуют серьёзных решений
       </h2>
       <p class="cases__description">Кейсы от ведущих российских компаний</p>
     </div>
     <div class="cases__items">
       <div class="cases__item">
-        <div class="cases__item_image">
+        <div class="cases__item-image">
           <img src="@/assets/img/case1.png" alt="case1" class="gray" />
         </div>
-        <router-link to="/register" class="cases__item_text"
+        <router-link to="/registration" class="cases__item-text"
           >Разработка программы сервера на Django</router-link
         >
       </div>
       <div class="cases__item">
-        <div class="cases__item_image">
+        <div class="cases__item-image">
           <img src="@/assets/img/case2.png" alt="case2" class="gray" />
         </div>
-        <a href="registration.html" class="cases__item_text"
-          >Вёрстка сайтов по макетам (HTML + CSS)</a
+        <router-link to="/registration" class="cases__item-text"
+          >Вёрстка сайтов по макетам (HTML + CSS)</router-link
         >
       </div>
       <div class="cases__item">
-        <div class="cases__item_image">
+        <div class="cases__item-image">
           <img src="@/assets/img/case3.png" alt="case3" class="gray" />
         </div>
-        <a href="registration.html" class="cases__item_text"
-          >Разработка мобильного UI на React-native</a
+        <router-link to="/registration" class="cases__item-text"
+          >Разработка мобильного UI на React-native</router-link
         >
       </div>
       <div class="cases__item">
-        <div class="cases__item_image">
+        <div class="cases__item-image">
           <img src="@/assets/img/case4.png" alt="case4" class="gray" />
         </div>
-        <a href="registration.html" class="cases__item_text"
-          >Создание Web-дизайна</a
+        <router-link to="/registration" class="cases__item-text"
+          >Создание Web-дизайна</router-link
         >
       </div>
       <div class="cases__item">
-        <div class="cases__item_image">
+        <div class="cases__item-image">
           <img src="@/assets/img/case5.png" alt="case5" class="gray" />
         </div>
-        <a href="registration.html" class="cases__item_text"
-          >Разработка мобильного приложения на IOS</a
+        <router-link to="/registration" class="cases__item-text"
+          >Разработка мобильного приложения на IOS</router-link
         >
       </div>
       <div class="cases__item">
-        <div class="cases__item_image">
+        <div class="cases__item-image">
           <img src="@/assets/img/case6.png" alt="case6" class="gray" />
         </div>
-        <a href="registration.html" class="cases__item_text"
-          >Разработка мобильного приложения на Android</a
+        <router-link to="/registration" class="cases__item-text"
+          >Разработка мобильного приложения на Android</router-link
         >
       </div>
       <div class="cases__item">
-        <div class="cases__item_image">
+        <div class="cases__item-image">
           <img src="@/assets/img/case7.png" alt="case7" class="gray" />
         </div>
-        <a href="registration.html" class="cases__item_text"
-          >Разработка UI на одном из JavaScript фреймворке</a
+        <router-link to="/registration" class="cases__item-text"
+          >Разработка UI на одном из JavaScript фреймворке</router-link
         >
       </div>
       <div class="cases__item">
-        <div class="cases__item_image">
+        <div class="cases__item-image">
           <img src="@/assets/img/case8.png" alt="case8" class="gray" />
         </div>
-        <a href="registration.html" class="cases__item_text"
-          >Разработка приложений под Windows 10 на C++</a
+        <router-link to="/registration" class="cases__item-text"
+          >Разработка приложений под Windows 10 на C++</router-link
         >
       </div>
     </div>
@@ -123,7 +123,7 @@ export default {
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
     background: rgb(255, 255, 255);
     text-align: left;
-    &_text {
+    &-text {
       text-decoration: none;
       width: 234px;
       padding-top: 21px;

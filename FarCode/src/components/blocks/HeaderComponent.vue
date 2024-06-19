@@ -1,11 +1,16 @@
 <template>
   <header class="header">
-    <a class="header__logo" href="index.html">
-      <img src="logo.png" alt="" class="header__logo_image" />
-    </a>
+    <router-link to="/" class="header__logo">
+      <img src="logo.png" alt="" class="header__logo-image" />
+    </router-link>
     <nav class="header__menu">
-      <a href="#about_us" class="header__menu_link">О нас</a>
-      <a href="#contacts" class="header__menu_link">Контакты</a>
+      <a
+        v-for="(item, index) in mainMenu"
+        :key="index"
+        :href="`${item.href}`"
+        >{{ item.name }}</a
+      >
+      <!-- <a href="#contacts" class="header__menu-link">Контакты</a> -->
     </nav>
   </header>
 </template>
@@ -13,6 +18,7 @@
 <script>
 export default {
   name: "HeaderComponent",
+  props: ["mainMenu"],
 };
 </script>
 
@@ -27,7 +33,6 @@ export default {
   &__menu {
     display: flex;
     gap: 72px;
-    /* padding-right: 120px; */
     & a {
       text-decoration: none;
       color: rgb(0, 0, 0);

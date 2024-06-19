@@ -14,14 +14,14 @@ body {
   overflow-x: hidden;
 }
 
-.slash__green {
+.slashgreen {
   color: #56FFCC;
   font-size: 40px;
   font-weight: 700;
   line-height: 49px;
 }
 
-.slash_purple {
+.slashpurple {
   margin: 0;
   color: #7856FF;
   font-size: 40px;

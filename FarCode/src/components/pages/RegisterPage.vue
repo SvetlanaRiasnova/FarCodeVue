@@ -1,7 +1,7 @@
 <template>
   <div>
     <BackgroundHeavens />
-    <HeaderComponent />
+    <HeaderComponent :mainMenu="mainMenu" />
     <RegisterPageIntro />
     <RegisterPageDetails />
     <RegisterCaseDescription />
@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import BackgroundHeavens from "@/components/MainBackgroundHeavens.vue";
+import BackgroundHeavens from "@/components/blocks/BackgroundHeavens.vue";
 import HeaderComponent from "@/components/blocks/HeaderComponent.vue";
 import RegisterPageIntro from "@/components/blocks/RegisterPageIntro.vue";
 import RegisterPageDetails from "@/components/blocks/RegisterPageDetails.vue";
@@ -32,6 +32,23 @@ export default {
     RegisterCaseMentors,
     RegisterForm,
     FooterComponent,
+  },
+  mounted() {
+    window.scrollTo(0, 0);
+  },
+  data() {
+    return {
+      mainMenu: [
+        {
+          name: "Главная",
+          href: "/",
+        },
+        {
+          name: "Контакты",
+          href: "#contacts",
+        },
+      ],
+    };
   },
 };
 </script>

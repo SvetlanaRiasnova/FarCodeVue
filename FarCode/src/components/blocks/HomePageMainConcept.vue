@@ -3,61 +3,60 @@
     <SubMenu :menuItems="menuItems" />
     <div class="concept__content" id="about">
       <div class="concept__about">
-        <h2 class="concept__about_title">
-          <span class="slash__green">/</span>Что такое хакатон цифровых
-          профессий?
+        <h2 class="concept__about-title">
+          <span class="slashgreen">/</span>Что такое хакатон цифровых профессий?
         </h2>
-        <p class="concept__about_text">
+        <p class="concept__about-text">
           Это мероприятие, где команды, состоящие из молодых людей создают
           прототипы цифровых продуктов по техническому заданию от малого и
           среднего бизнеса (кейсы).
         </p>
       </div>
       <div class="concept__reasons">
-        <h2 class="concept__reasons_title">
-          <span class="slash__green">/</span>Почему вам это нужно?
+        <h2 class="concept__reasons-title">
+          <span class="slashgreen">/</span>Почему вам это нужно?
         </h2>
-        <p class="concept__reasons_text">
+        <p class="concept__reasons-text">
           Хакатон позволит вам получить крутой опыт командной разработки, новые
           и полезные знакомства, а также шанс попасть на стажировку или работу в
           IT-компанию или в IT-подразделение крупной корпорации.
         </p>
       </div>
       <div class="concept__participation">
-        <h2 class="concept__participation_title">
-          <span class="slash__green">/</span>
+        <h2 class="concept__participation-title">
+          <span class="slashgreen">/</span>
           Как принять участие в хакатоне?
         </h2>
-        <div class="concept__participation_cards">
-          <div class="concept__participation_card">
-            <div class="concept__participation_icon">
+        <div class="concept__participation-cards">
+          <div class="concept__participation-card">
+            <div class="concept__participation-icon">
               <img src="@/assets/icons/participation1.png" alt="icon" />
             </div>
-            <div class="concept__participation_text">
+            <div class="concept__participation-text">
               Изучите кейсы через кнопки Подробнее о каждом кейсе
             </div>
           </div>
-          <div class="concept__participation_card">
-            <div class="concept__participation_icon">
+          <div class="concept__participation-card">
+            <div class="concept__participation-icon">
               <img src="@/assets/icons/participation2.png" alt="icon" />
             </div>
-            <div class="concept__participation_text">
+            <div class="concept__participation-text">
               Регистрируйтесь на понравившийся кейс
             </div>
           </div>
-          <div class="concept__participation_card">
-            <div class="concept__participation_icon">
+          <div class="concept__participation-card">
+            <div class="concept__participation-icon">
               <img src="@/assets/icons/participation3.png" alt="icon" />
             </div>
-            <div class="concept__participation_text">
+            <div class="concept__participation-text">
               Перед хакатоном будет укомплектована команда по навыкам
             </div>
           </div>
-          <div class="concept__participation_card">
-            <div class="concept__participation_icon">
+          <div class="concept__participation-card">
+            <div class="concept__participation-icon">
               <img src="@/assets/icons/participation4.png" alt="icon" />
             </div>
-            <div class="concept__participation_text">
+            <div class="concept__participation-text">
               Решаете кейс в дни проведения хакатона вместе со своей командой
             </div>
           </div>
@@ -68,7 +67,7 @@
 </template>
 
 <script>
-import SubMenu from "@/components/SubMenu.vue";
+import SubMenu from "@/components/blocks/SubMenu.vue";
 
 export default {
   name: "HomePageConcept",
@@ -77,7 +76,24 @@ export default {
   },
   data() {
     return {
-      menuItems: ["О концепции", "Кейсы", "Ключевые даты", "FAQ"],
+      menuItems: [
+        {
+          name: "О концепции",
+          href: "#about_us",
+        },
+        {
+          name: "Кейсы",
+          href: "#cases",
+        },
+        {
+          name: "Ключевые даты",
+          href: "#dates",
+        },
+        {
+          name: "FAQ",
+          href: "#faq",
+        },
+      ],
     };
   },
 };
@@ -106,12 +122,12 @@ export default {
     height: 508px;
     padding: 65px 121px;
 
-    &_title {
+    &-title {
       width: 570px;
       margin: 0;
       @include titleFont;
     }
-    &_text {
+    &-text {
       margin: 0;
       width: 528px;
     }
@@ -122,12 +138,12 @@ export default {
     height: 508px;
     background: url("@/assets/img/concept__reasons.png") no-repeat;
     background-size: contain;
-    &_title {
+    &-title {
       margin: 0;
       width: 306px;
       @include titleFont;
     }
-    &_text {
+    &-text {
       padding-right: 200px;
     }
   }
@@ -136,12 +152,12 @@ export default {
     padding: 65px 121px;
     background: url("@/assets/img/concept__participation.png") no-repeat;
     background-size: contain;
-    &_title {
+    &-title {
       margin: 0;
       width: 510px;
       @include titleFont;
     }
-    &_cards {
+    &-cards {
       display: grid;
       grid-template-columns: repeat(4, auto);
       grid-gap: 14px;
@@ -149,7 +165,7 @@ export default {
       align-content: start;
       padding-top: 46px;
     }
-    &_card {
+    &-card {
       width: 300px;
       height: 225px;
       @include flexCenter;
@@ -159,14 +175,14 @@ export default {
         margin-top: -10px;
       }
     }
-    &_icon {
+    &-icon {
       @include flexCenter;
       flex-direction: column;
       width: 110px;
       height: 110px;
       background-color: #ffffff;
     }
-    &_text {
+    &-text {
       padding-top: 34px;
     }
     & img {

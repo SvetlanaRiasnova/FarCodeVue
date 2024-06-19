@@ -1,10 +1,10 @@
 <template>
-  <section class="mentors">
+  <section class="mentors" id="mentors">
     <h2 class="mentors__header">
-      <span class="slash__green">/</span>Менторы кейса
+      <span class="slashgreen">/</span>Менторы кейса
     </h2>
     <div class="mentors__info">
-      <div class="mentors__info_block">
+      <div class="mentors__info-block">
         <img
           src="@/assets/img/Alexsey.png"
           alt="mentor Alexsey"
@@ -13,7 +13,7 @@
         <p class="mentors__name">Алексей Кунин</p>
         <p class="mentors__prof">CEO Optiacs</p>
       </div>
-      <div class="mentors__info_block">
+      <div class="mentors__info-block">
         <img
           src="@/assets/img/Oleg.png"
           alt="mentor Oleg"
@@ -22,7 +22,7 @@
         <p class="mentors__name">Олег Никитин</p>
         <p class="mentors__prof">Co-founder<br />Optiacs</p>
       </div>
-      <div class="mentors__info_block">
+      <div class="mentors__info-block">
         <img
           src="@/assets/img/Olga.png"
           alt="mentor Olga"
@@ -63,7 +63,7 @@ export default {
     & img {
       padding-bottom: 34px;
     }
-    &_block {
+    &-block {
       text-align: center;
     }
   }

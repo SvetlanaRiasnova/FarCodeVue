@@ -1,9 +1,9 @@
 <template>
-  <section class="case__description">
-    <h2 class="case__description_header">
-      <span class="slash_purple">/</span>Описание кейса
+  <section class="case__description" id="case_description">
+    <h2 class="case__description-header">
+      <span class="slashpurple">/</span>Описание кейса
     </h2>
-    <p class="case__description_text">
+    <p class="case__description-text">
       Разрабатываемая технология относится к области предиктивной аналитики.
       Обладая знаниями не только в финансах, но и в математике, команда проекта
       создает самообучающуюся систему, позволяющую предсказывать доходность на
@@ -11,7 +11,7 @@
       разных вводных сможет прогнозировать доходность выше на 8-30% по бумагам
       компаний S&P500.
     </p>
-    <p class="case__description_text">
+    <p class="case__description-text">
       При этом они создают не просто инструмент для хедж-фондов, использующих
       роботов для торговли. Основной продукт компании - мобильное приложение для
       управления финансовым портфелем на бирже с помощью искусственного
@@ -21,7 +21,7 @@
       стратегию в реальном времени, либо использовать ее для автоматического
       управления брокерским счетом пользователя.
     </p>
-    <p class="case__description_text">
+    <p class="case__description-text">
       Компания активно участвует в инновационных конкурсах и международных
       форумах в области информационных технологий. Технология была
       продемонстрирована на международной престижной конференции "Fintech
@@ -42,12 +42,12 @@ export default {
 .case__description {
   margin: 0 auto;
   width: 1170px;
-  &_header {
+  &-header {
     @include titleFont;
     margin: 0;
     padding-bottom: 40px;
   }
-  &_text {
+  &-text {
     margin: 0;
     padding-bottom: 40px;
   }

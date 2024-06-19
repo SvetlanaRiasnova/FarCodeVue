@@ -1,7 +1,7 @@
 <template>
   <div>
     <BackgroundHeavens />
-    <HeaderComponent />
+    <HeaderComponent :mainMenu="mainMenu" />
     <HomePageIntro />
     <HomePageConcept />
     <HomePageCases />
@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import BackgroundHeavens from "/src/components/MainBackgroundHeavens.vue";
+import BackgroundHeavens from "@/components/blocks/BackgroundHeavens.vue";
 import HeaderComponent from "@/components/blocks/HeaderComponent.vue";
 import HomePageIntro from "@/components/blocks/HomePageIntro.vue";
 import HomePageConcept from "@/components/blocks/HomePageMainConcept.vue";
@@ -32,39 +32,51 @@ export default {
     QuestionAnswer,
     FooterComponent,
   },
+  data() {
+    return {
+      mainMenu: [
+        {
+          name: "О нас",
+          href: "#about_us",
+        },
+        {
+          name: "Контакты",
+          href: "#contacts",
+        },
+      ],
+    };
+  },
 };
 </script>
 <style lang="scss" scoped>
 @import "src/style/style.scss";
-.intro {
-  margin: 0 auto;
-  width: 1291px;
-  display: flex;
-  gap: 100px;
-  justify-content: center;
-  padding-top: 80px;
-  &__info {
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    padding-top: 227px;
-    &_header {
-      margin: 0;
-      font-size: 60px;
-      font-weight: 700;
-      line-height: 73px;
-      text-align: left;
-      display: flex;
-      align-items: center;
-      & .slash_purple {
-        font-size: 60px;
-      }
-    }
-    &_description {
-      margin: 0;
-      color: rgb(0, 0, 0);
-      padding-top: 25px;
-    }
-  }
+.cloud5 {
+  /* Фигура4 */
+  position: absolute;
+  width: 632.09px;
+  height: 656.4px;
+  // left: 2033.67px;
+  right: -50.13px;
+  top: 4636px;
+  bottom: 953.03px;
+  z-index: -2;
+  // transform: rotate(160.73deg);
+}
+.cloud6 {
+  /* Фигура6 */
+  position: absolute;
+  width: 590.13px;
+  height: 569.43px;
+  left: -290px;
+  right: 2315.49px;
+  top: 5540px;
+  bottom: 136px;
+  z-index: -2;
+}
+.cloud__bottom {
+  width: 400.63px;
+  height: 405.45px;
+  right: 1640.37px;
+  top: 3444px;
 }
 </style>

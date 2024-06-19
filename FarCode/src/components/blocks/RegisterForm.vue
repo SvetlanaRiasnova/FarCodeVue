@@ -1,11 +1,11 @@
 <template>
-  <section class="register">
+  <section class="register" id="register_form">
     <h2 class="register__header">
-      <span class="slash_purple">/</span>Регистрация на кейс
+      <span class="slashpurple">/</span>Регистрация на кейс
     </h2>
-    <form action="" method="post" class="register__form">
-      <div class="register__form_inputs">
-        <div class="register__form_left">
+    <form action="" @submit="formSubmit" method="post" class="register__form">
+      <div class="register__form-inputs">
+        <div class="register__form-left">
           <input type="text" placeholder="Введите имя" required />
           <input type="text" placeholder="Введите фамилию" required />
           <input
@@ -17,9 +17,9 @@
           <input type="phone" placeholder="Номер телефона" required />
           <input type="text" placeholder="Название организации" />
         </div>
-        <div class="register__form_right">
+        <div class="register__form-right">
           <textarea name="" id="" rows="14"></textarea>
-          <div class="register__form_chbx">
+          <div class="register__form-chbx">
             <input id="agreement" name="agreement" type="checkbox" required />
             <label for="agreement">Соглашение пользователя</label>
           </div>
@@ -27,12 +27,31 @@
       </div>
       <button type="submit" class="register__button">Зарегистрироваться</button>
     </form>
+    <div class="modal__registration hidden">
+      <p>Вы успешно зарегистрировались на кейс</p>
+    </div>
   </section>
 </template>
 
 <script>
 export default {
   name: "RegisterForm",
+  methods: {
+    formSubmit(e) {
+      const res = document.querySelector(".modal__registration");
+      e.preventDefault();
+      // let response = await fetch('URL', {
+      //   method: 'POST',
+      //   body: new FormData(register_form)
+      // });
+      // let result = await response.json();
+      res.classList.toggle("hidden");
+      setTimeout(() => {
+        res.classList.toggle("hidden");
+        location.href = "/";
+      }, 1300);
+    },
+  },
 };
 </script>
 
@@ -44,13 +63,13 @@ export default {
     @include titleFont;
     padding-bottom: 53px;
   }
-  &__form_inputs {
+  &__form-inputs {
     display: grid;
     gap: 30px;
     grid-template-columns: repeat(2, 570px);
   }
-  &__form_left,
-  &__form_right {
+  &__form-left,
+  &__form-right {
     width: 570px;
     display: flex;
     flex-direction: column;
@@ -70,7 +89,7 @@ export default {
       padding: 21px 31px;
     }
   }
-  &__form_chbx {
+  &__form-chbx {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -116,21 +135,23 @@ export default {
     color: #ffffff;
   }
 }
-.modal {
-  // display: flex;
-  width: 100%;
-  height: 100%;
+.modal__registration {
+  background-color: #cfcfcf;
+  color: rgb(22, 22, 22);
+  margin: 0 auto;
+  padding: 40px;
+  padding-top: 60px;
+  width: 600px;
+  height: 150px;
   position: fixed;
   left: 0;
-  top: 0;
+  top: 45%;
   right: 0;
   bottom: 0;
-  justify-content: center;
-  align-items: center;
-  & .register {
-    // display: block;
-    background: #ddd;
-    width: 900px;
-  }
+  border-radius: 10px;
+  box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
+  text-align: center;
+  font-size: 28px;
 }
 </style>

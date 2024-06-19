@@ -3,7 +3,7 @@
     <div class="schedule__content">
       <div class="schedule__heading">
         <h2 class="schedule__header">
-          <span class="slash__green">/</span>Что, а самое главное когда
+          <span class="slashgreen">/</span>Что, а самое главное когда
         </h2>
         <p class="schedule__text">Ключевые даты хакатона</p>
       </div>
