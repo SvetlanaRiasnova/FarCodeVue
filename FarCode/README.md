@@ -1,5 +1,4 @@
-# interno
-
+# FarCode
 ## Project setup
 ```
 npm install
